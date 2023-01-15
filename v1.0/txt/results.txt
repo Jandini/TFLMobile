@@ -1,0 +1,7 @@
+<td class="option">1</td>
+<td class="depart">13:04</td>
+<td class="arrive">13:49</td>
+<td class="duration">00:45</td>
+<td class="interchanges"><img src="assets/images/icon-rail.gif" alt="Rail" hspace="1" /><img src="assets/images/icon-tube.gif" alt="Tube" hspace="1" /></td>
+
+<td><a href="XSLT_TRIP_REQUEST2?language=en&amp;sessionID=JP26_1767663600&amp;requestID=1&amp;tripSelector1=1&amp;itdLPxx_view=detail&amp;tripSelection=on&amp;command=nop&amp;calculateDistance=1" class="jpbutton" title="View the details for this route">View</a> <input type="checkbox" name="tripSelector1" checked="checked" /></td></tr></table><p class="routealert-green">Planned engineering works are taking place</p><table class="jpresults-2"><tr class="hideheader"><th>Route</th><th>Depart</th><th>Arrive</th><th>Duration</th><th>Interchanges</th><th class="viewheader">}

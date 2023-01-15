@@ -1,0 +1,9 @@
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&execInst=&place_origin=London&place_destination=London&name_origin=kingston&name_destination=twickenham&sessionID=0&ptOptionsActive=-1&type_origin=stop&type_destination=stop
+
+
+
+
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&execInst=&place_origin=London&place_destination=London&name_origin=kingston&name_destination=bank&sessionID=0&ptOptionsActive=-1&type_origin=stop&type_destination=stop
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&execInst=&place_origin=London&place_destination=London&sessionID=0&ptOptionsActive=-1&type_origin=stop&type_destination=stop&name_origin=kingston&name_destination=waterloo
+
+

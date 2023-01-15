@@ -1,0 +1,107 @@
+<form action="XSLT_TRIP_REQUEST2" method="post"><input name="sessionID" value="0" type="hidden"><input name="requestID" value="0" type="hidden"><input name="ptOptionsActive" value="1" type="hidden"><input name="itOptionsActive" value="1" type="hidden"><input name="imparedOptionsActive" value="1" type="hidden"><input name="execInst" value="normal" type="hidden"><input name="command" value="" type="hidden"><input name="itdLPxx_request" value="" type="hidden"><input name="itdLPxx_view" value="" type="hidden"><input name="itdLPxx_tubeMap" value="" type="hidden"><input name="Submit" value="Go" class="button" style="float: right;" type="submit"><span style="float: right;">&nbsp;</span><select name="language" class="language"><option value="en" selected="selected">English</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="it">Italiano</option><option value="es">Español</option><option value="bn">?????</option><option value="hi">??????</option><option value="gr">????????</option><option value="tr">Türkçe</option><option value="vi">Ti?ng Vi?t</option><option value="gu">???????</option><option value="pa">??????</option><option value="ja">???</option><option value="ru">??????? ????</option><option value="pl">jezyk polski</option><option value="zh-cmn">???</option><option value="zh-yue">??</option><option value="ur">????</option><option value="ar">????</option></select></form><h2>Travelling from...</h2></div>
+
+
+
+
+
+
+
+
+<form action="XSLT_TRIP_REQUEST2" method="post">
+
+
+<input name="language" value="en" type="hidden">
+
+<input name="sessionID" value="JP10_1999729192" type="hidden">
+<input name="requestID" value="1" type="hidden">
+<input name="ptOptionsActive" value="1" type="hidden">
+<input name="itOptionsActive" value="1" type="hidden">
+<input name="imparedOptionsActive" value="1" type="hidden">
+<input name="ptAdvancedOptions" value="1" type="hidden">
+<input name="advOptActive_2" value="1" type="hidden">
+<input name="advOpt_2" value="1" type="hidden">
+<input name="execInst" value="normal" type="hidden">
+<input name="command" value="" type="hidden">
+<input name="itdLPxx_request" value="" type="hidden">
+<input name="itdLPxx_view" value="" type="hidden">
+<input name="itdLPxx_tubeMap" value="" type="hidden">
+<input name="calculateDistance" value="1" type="hidden"><p class="routealert-red-full"></p><fieldset id="from"><legend>From</legend><label for="startpoint" class="off-left">Starting point:</label>
+<input name="name_origin" value="From" id="startpoint" type="text">
+<input name="nameState_origin" value="notidentified" type="hidden"><br>
+<input name="type_origin" value="stop" id="from-stationstop" checked="checked" type="radio"> <label for="from-stationstop">Station or stop in: </label><label for="from-placename" class="off-left"><br> (input placename)</label>
+
+<input value="London" name="place_origin" id="from-placename" type="text"><br>
+<input name="type_origin" value="locator" id="from-postcode" type="radio"> <label for="from-postcode">Post code  </label><br>
+<input name="type_origin" value="address" id="from-address" type="radio"> <label for="from-address">Address  </label><br>
+<input name="type_origin" value="poi" id="from-placeofinterest" type="radio"> <label for="from-placeofinterest">Place of interest  </label><p>For location help, try the following: <a href="javascript:document.forms[1].itdLPxx_request.value='XSLT_TRIP_REQUEST2';document.forms[1].itdLPxx_tubeMap.value='origin';document.forms[1].submit();" title="Click here to set the location to a station using the Tube map">Tube map</a>.	<a href="javascript:sendStat('STREET_MAP');document.forms[1].itdLPxx_request.value='XSLT_TRIP_REQUEST2';document.forms[1].command.value='mapRequest_origin';document.forms[1].submit();" title="Click here to set the location using a street map">Street map</a></p></fieldset><fieldset id="to"><legend>Travelling to...</legend><label for="endpoint" class="off-left">End point:</label>
+
+<input name="name_destination" value="To" id="endpoint" type="text">
+<input name="nameState_destination" value="notidentified" type="hidden"><br>
+<input name="type_destination" value="stop" id="to-stationstop" checked="checked" type="radio"> <label for="to-stationstop">Station or stop in: </label><label for="to-placename" class="off-left"><br>(input placename)</label>
+
+<input value="London" name="place_destination" id="to-placename" type="text"><br>
+<input name="type_destination" value="locator" id="to-postcode" type="radio"> <label for="to-postcode">Post code  </label><br>
+<input name="type_destination" value="address" id="to-address" type="radio"> <label for="to-address">Address  </label><br>
+<input name="type_destination" value="poi" id="to-placeofinterest" type="radio"> <label for="to-placeofinterest">Place of interest  </label><p>For location help, try the following: <a href="javascript:document.forms[1].itdLPxx_request.value='XSLT_TRIP_REQUEST2';document.forms[1].itdLPxx_tubeMap.value='destination';document.forms[1].submit();" title="Click here to set the location to a station using the Tube map">Tube map</a>.
+				<a href="javascript:sendStat('STREET_MAP');document.forms[1].itdLPxx_request.value='XSLT_TRIP_REQUEST2';document.forms[1].command.value='mapRequest_destination';document.forms[1].submit();" title="Click here to set the location using a street map">Street map</a></p></fieldset><fieldset id="time-and-date"><legend class="off-left">Time and date</legend><label for="depart-arrive">&nbsp;I need to  </label><select name="itdTripDateTimeDepArr" id="depart-arrive"><option value="arr">arrive</option><option value="dep" selected="selected">depart</option></select><label for="choose-date">&nbsp;on&nbsp;</label><select name="itdDateDay" id="choose-date"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22" selected="selected">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>&nbsp;
+
+              <label for="choose-month" class="off-left">Choose month:</label><select name="itdDateYearMonth" id="choose-month"><option value="200710">October 2007</option><option value="200711">November 2007</option><option value="200712">December 2007</option><option value="200801">January 2008</option><option value="200802">February 2008</option><option value="200803">March 2008</option><option value="200804">April 2008</option><option value="200805">May 2008</option><option value="200806">June 2008</option><option value="200807">July 2008</option><option value="200808">August 2008</option><option value="200809">September 2008</option><option value="200810" selected="selected">October 2008</option><option value="200811">November 2008</option></select><br> at: <label for="choose-hour" class="off-left">(Choose hour)</label><select name="itdTimeHour" id="choose-hour"><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23" selected="selected">23</option><option value="24">24</option></select>
+
+			  :
+			  <label for="choose-minutes" class="off-left">(Choose minutes)</label><select name="itdTimeMinute" id="choose-minutes"><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36" selected="selected">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option></select>&nbsp;hours<div class="jpbuttonwrapper">
+
+
+<input name="Submit" value="Search" class="button" type="submit"></div></fieldset><fieldset id="advanced-options"><legend>Advanced options</legend><h3>Show me...</h3><p>Select your preferred option:
+				  </p>
+
+<input id="fastest-routes" name="routeType" value="LEASTTIME" checked="checked" type="radio"> <label for="fastest-routes">The fastest routes</label><br>
+
+
+<input id="least-changes" name="routeType" value="LEASTINTERCHANGE" type="radio"> <label for="least-changes">Routes with the fewest changes</label><br>
+<input id="least-walking" name="routeType" value="LEASTWALKING" type="radio"> <label for="least-walking">Routes with the least walking between stops</label><br><label for="travelling-via">I wish to travel via:</label> <label for="startpoint" class="off-left">Starting point:</label>
+<input name="name_via" value="Enter location (optional)" class="clear-on-focus" id="travelling-via" type="text">
+<input name="nameState_via" value="notidentified" type="hidden">
+<input name="nameDefaultText_via" value="Enter location (optional)" type="hidden"><br>
+<input name="type_via" value="stop" id="via-stationstop" checked="checked" type="radio"> <label for="via-stationstop">Station or stop in: </label><label for="via-placename" class="off-left"><br>
+
+	  (input placename)</label>
+
+<input name="place_via" value="London" id="via-placename" type="text">
+<input name="placeDefaultText_via" value="London" type="hidden"><br>
+<input name="type_via" value="locator" id="via-postcode" type="radio"> <label for="via-postcode">Post code  </label>
+<input name="type_via" value="address" id="via-address" type="radio"> <label for="via-address">Address  </label>
+<input name="type_via" value="poi" id="via-placeofinterest" type="radio"> <label for="via-placeofinterest">Place of interest  </label><p>For location help, try the following: <a href="javascript:document.forms[1].itdLPxx_request.value='XSLT_TRIP_REQUEST2';document.forms[1].itdLPxx_tubeMap.value='via';document.forms[1].submit();" title="Click here to set the location to a station using the Tube map">Tube map</a>.
+				<a href="javascript:sendStat('STREET_MAP');document.forms[1].itdLPxx_request.value='XSLT_TRIP_REQUEST2';document.forms[1].command.value='mapRequest_via';document.forms[1].submit();" title="Click here to set the location using a street map">Street map</a></p><h3>Use any of these modes of transport</h3><p>Deselect the transport modes that you don't want to use</p>
+
+<input name="includedMeans" value="checkbox" type="hidden">
+<input name="inclMOT_11" id="inclMOT_11" value="1" type="hidden"><div class="modewrapper-rail">
+<input id="mode-rail" name="inclMOT_0" checked="checked" type="checkbox"><label for="mode-rail">&nbsp;Rail</label></div><div class="modewrapper-dlr">
+<input id="mode-dlr" name="inclMOT_1" onclick="checkMot()" checked="checked" type="checkbox"><label for="mode-dlr">&nbsp;DLR</label></div><div class="modewrapper-tube">
+<input id="mode-tube" name="inclMOT_2" onclick="checkMot()" checked="checked" type="checkbox"><label for="mode-tube">&nbsp;Tube</label></div><div class="modewrapper-trams">
+<input id="mode-tram" name="inclMOT_4" onclick="checkMot()" checked="checked" type="checkbox"><label for="mode-tram">&nbsp;Tram</label></div><div class="modewrapper-bus">
+<input id="mode-bus" name="inclMOT_5" checked="checked" type="checkbox"><label for="mode-bus">&nbsp;Bus</label></div><div class="modewrapper-coach">
+<input id="mode-coach" name="inclMOT_7" checked="checked" type="checkbox"><label for="mode-coach">&nbsp;Coach</label></div><div class="modewrapper-rivers">
+<input id="mode-river" name="inclMOT_9" checked="checked" type="checkbox"><label for="mode-river">&nbsp;River</label></div><p class="clear">Tick the box below to include cycling routes. <a href="#cycle">Additional cycling options</a>.
+				  </p><div class="modewrapper-cycle">
+<input id="mode-cycle" name="cyclingActive" type="checkbox"><label for="mode-cycle">&nbsp;Cycle </label></div><div class="jpbuttonwrapper">
+<input name="Submit" value="Search" class="button" type="submit"></div>
+
+
+<h3>My mobility requirements</h3>
+
+<input name="noSolidStairs" id="stairs" type="checkbox"><label for="stairs">&nbsp;I cannot use stairs</label><br>
+<input name="noEscalators" id="escalators" type="checkbox"><label for="escalators">&nbsp;I cannot use escalators</label><br>
+<input name="noElevators" id="lifts" type="checkbox"><label for="lifts">&nbsp;I cannot use lifts</label><br>
+<input name="wheelchair" id="accessible-vehicles" type="checkbox"><label for="accessible-vehicles">&nbsp;I use wheelchair accessible vehicles</label><p>Select any of the above statements that apply to you.</p><p>For station access details <a title=" (Opens in new window)" class="external-site" href="http://www.directenquiries.com/londonunderground.aspx?tab=Underground%20Stations&amp;level=1">click here</a></p><h3>Cycling options</h3><p>Select any which apply:<a name="cycle">&nbsp;</a></p>
+<input id="cycle-only" name="cycleType" value="107" type="radio"> <label for="cycle-only"> I want a cycle only route </label><br>
+<input id="cycle-station" name="cycleType" value="101" type="radio"> <label for="cycle-station"> I want to leave my bicycle at the station </label><br>
+<input id="cycle-public" name="cycleType" value="102" type="radio"> <label for="cycle-public"> I want to take my bicycle on public transport  </label><br><label> I don't want to cycle for longer than 
+<input id="cycle-minutes" name="trITMOTvalue101" size="3" value="60" type="text">&nbsp;minutes</label><h3>Walking options</h3><label>I don't want to walk for longer than&nbsp;
+<input id="walking-minutes" name="trITMOTvalue" size="3" value="20" type="text">
+<input name="trITMOT" value="100" type="hidden">&nbsp;minutes</label><br><label for="walking-speed">My walking speed is:&nbsp;</label><select name="changeSpeed" id="walking-speed"><option value="normal" selected="selected">Average</option><option value="fast">Fast</option><option value="slow">Slow</option></select><br>
+<input id="journey-quicker" name="useProxFootSearch" type="checkbox"> <label for="journey-quicker">I'd rather walk if it makes my journey quicker</label><div class="jpbuttonwrapper">
+<input name="Submit" value="Search" class="button" type="submit"></div></fieldset></form></div>
+
+
+
+

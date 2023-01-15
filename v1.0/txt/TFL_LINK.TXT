@@ -1,0 +1,1 @@
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&sessionID=JP18_1819151246&requestID=1&tripSelector2=1&itdLPxx_view=detail&tripSelection=on&command=nop&calculateDistance=1

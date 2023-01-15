@@ -1,0 +1,199 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32E55059-1B19-49CB-BDAB-8DFC81EFCE97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Janda</RootNamespace>
+    <AssemblyName>TFL Mobile</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>3C41C503-53EF-4c2a-8DD4-A8217CAD115E</PlatformID>
+    <OSVersion>4.20</OSVersion>
+    <DeployDirSuffix>Main</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>main.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>PocketPC</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>none</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataGrid" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FromToPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FromToPanel.Designer.cs">
+      <DependentUpon>FromToPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlParser.cs" />
+    <Compile Include="LogoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogoPanel.Designer.cs">
+      <DependentUpon>LogoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MulitiplePlacePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MulitiplePlacePanel.Designer.cs">
+      <DependentUpon>MulitiplePlacePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiplePlaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiplePlaces.Designer.cs">
+      <DependentUpon>MultiplePlaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParserObject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FromToPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FromToPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoPanel.resx">
+      <DependentUpon>LogoPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MulitiplePlacePanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MulitiplePlacePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiplePlaces.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MultiplePlaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultListItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResultListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultListPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResultListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimePanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransportPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TransportPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ResultListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultListItem.Designer.cs">
+      <DependentUpon>ResultListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultListPanel.Designer.cs">
+      <DependentUpon>ResultListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultParser.cs" />
+    <Compile Include="ScraperObject.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strings.cs" />
+    <Compile Include="TextParser.cs" />
+    <Compile Include="TimePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimePanel.Designer.cs">
+      <DependentUpon>TimePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransportPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransportPanel.Designer.cs">
+      <DependentUpon>TransportPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebScraper.cs" />
+    <Compile Include="WebScraperThread.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main.ico" />
+    <Content Include="main_transparent.ico" />
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

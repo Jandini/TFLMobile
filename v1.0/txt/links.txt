@@ -1,0 +1,11 @@
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&sessionID=JP09_2412889373&requestID=1&tripSelector1=1&itdLPxx_view=detail&tripSelection=on&command=nop&calculateDistance=1
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&sessionID=JP09_2412889373&requestID=1&tripSelector2=1&itdLPxx_view=detail&tripSelection=on&command=nop&calculateDistance=1
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&sessionID=JP09_2412889373&requestID=1&tripSelector24=1&itdLPxx_view=detail&tripSelection=on&command=nop&calculateDistance=1
+
+
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&sessionID=JP09_2412889373&requestID=1&command=tripFirst
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&sessionID=JP09_2412889373&requestID=1&command=tripPrev
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&sessionID=JP09_2412889373&requestID=1&command=tripNext
+http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&sessionID=JP09_2412889373&requestID=1&command=tripLast
+
+
